@@ -1,0 +1,15 @@
+# Phase 1 dependencies. CPU-only torch (see PLAN: sub-ms inference is the
+# constraint, not training scale). Pin torch so Phase 2 PyTorch Geometric
+# wheels resolve against a known build.
+#
+# Install:
+#   python3 -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+numpy>=1.26
+scipy>=1.11
+pytest>=8.0
+torch==2.4.1
+
+# Phase 2 (deferred — uncomment when starting the GNN+Transformer encoder):
+# torch-geometric>=2.5
+# transformers>=4.44
