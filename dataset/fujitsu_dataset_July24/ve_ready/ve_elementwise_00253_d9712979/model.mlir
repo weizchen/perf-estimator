@@ -1,0 +1,9 @@
+module {
+  func.func @kernel(%arg0: tensor<47x53xi16>, %arg1: tensor<47x53xi16>, %arg2: tensor<47x53xi16>) -> tensor<47x53xi16> {
+    %r = NAIL.unit {schedule = 0 : i64} : !NAIL.target<i : 0, j : 0, proc : 1> -> tensor<47x53xi16> {
+    %z = linalg.elementwise kind=#linalg.elementwise_kind<sub> ins(%arg0, %arg1 : tensor<47x53xi16>, tensor<47x53xi16>) outs(%arg2 : tensor<47x53xi16>) -> tensor<47x53xi16>
+      NAIL.yield %z : tensor<47x53xi16>
+    }
+    return %r : tensor<47x53xi16>
+  }
+}

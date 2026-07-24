@@ -1,0 +1,6 @@
+# scalar_matmul_00133_5c0bf4aa  (linalg.matmul, f16)
+NAME := scalar_matmul_00133_5c0bf4aa
+SUPPORT_FLAGS := 
+BENCH_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+OFA_ROOT ?= /home/weizchen/code/perf-estimator/OFA-compiler-master
+include $(BENCH_DIR)/../common.mk

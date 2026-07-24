@@ -1,0 +1,15 @@
+AI-Nordics_bert-large-swedish-cased_start18_end22_4__forward__op3__scalar: unsupported tensor type syntax
+AI-Nordics_bert-large-swedish-cased_start300_end302_11__forward__op1__scalar: unsupported tensor type syntax
+Aleksandar_electra-srb-ner-setimes_start18_end22_4__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start0_end5_0__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start128_end133_20__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start133_end138_21__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start1984_end1989_60__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start1995_end1999_61__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start376_end381_40__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start381_end386_41__forward__op3__scalar: unsupported tensor type syntax
+face-parsing_start5_end10_1__forward__op3__scalar: unsupported tensor type syntax
+nvidia_mit-b0_start181_end186_33__forward__op3__scalar: unsupported tensor type syntax
+nvidia_mit-b0_start275_end279_53__forward__op3__scalar: unsupported tensor type syntax
+nvidia_mit-b0_start5_end10_1__forward__op3__scalar: unsupported tensor type syntax
+nvidia_mit-b0_start93_end98_19__forward__op3__scalar: unsupported tensor type syntax
