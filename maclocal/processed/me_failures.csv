@@ -1,0 +1,175 @@
+benchmark,mode,dtype,acc,M,K,N,mnk,run,host_seconds,note
+me_matmul_00325_f7699c26,f16->f32,f16,f32,64,128,64,524288,OVERFLOW,39,"sim_ticks=18446744073709551616 >= 2**64 (counter wraparound, not a measurement)"
+me_matmul_00410_5d3a58ad,f16->f32,f16,f32,640,64,3072,125829120,PANIC,382,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00366_f0b23f41,f16->f32,f16,f32,1536,64,1984,195035136,PANIC,460,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00384_3f7e1416,f16->f32,f16,f32,1344,64,2560,220200960,PANIC,512,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00032_fe1ef4f8,f8E5M2->f32,f8E5M2,f32,2048,128,1024,268435456,PANIC,452,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00201_60b57a61,f8E5M2->f32,f8E5M2,f32,1024,128,2048,268435456,PANIC,377,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00458_1f30ce48,f16->f32,f16,f32,1728,64,2624,290193408,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00601_b2883eca,f16->f16,f16,f16,3776,64,1216,293863424,PANIC,399,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00136_a8fb3488,f8E5M2->f32,f8E5M2,f32,2176,128,1152,320864256,PANIC,388,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00317_ea6bf6cb,f16->f32,f16,f32,3648,128,704,328728576,PANIC,601,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00771_bac6eb5d,f16->f16,f16,f16,2816,64,2240,403701760,PANIC,501,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00259_74f27660,f8E5M2->f32,f8E5M2,f32,1920,128,1664,408944640,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00404_818cb98a,f16->f32,f16,f32,896,192,2496,429391872,PANIC,399,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00653_58fc37f2,f16->f16,f16,f16,1856,64,3968,471334912,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00114_1990a5e0,f8E5M2->f32,f8E5M2,f32,3840,256,512,503316480,PANIC,517,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00412_c60bf787,f16->f32,f16,f32,4096,64,1984,520093696,RUN-FAIL,1618,"gem5 rc=1, no stats.txt"
+me_matmul_00563_ee8d04b0,f16->f16,f16,f16,3584,64,2304,528482304,PANIC,698,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00162_187577da,f8E5M2->f32,f8E5M2,f32,1408,128,3072,553648128,PANIC,665,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00316_389b45d8,f16->f32,f16,f32,576,256,3776,556793856,PANIC,427,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00746_8aeb05fd,f16->f16,f16,f16,64,3904,2240,559677440,PANIC,613,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00509_8c40c450,f16->f32,f16,f32,3136,128,1408,565182464,PANIC,624,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00588_cb10449e,f16->f16,f16,f16,2240,128,1984,568852480,PANIC,447,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00130_aa63741d,f8E5M2->f32,f8E5M2,f32,2944,256,768,578813952,PANIC,381,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00015_3e66b368,f8E5M2->f32,f8E5M2,f32,2560,256,896,587202560,PANIC,406,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00609_9f8f6258,f16->f16,f16,f16,2752,3456,64,608698368,PANIC,539,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00345_8eb4a1fe,f16->f32,f16,f32,3264,3008,64,628359168,PANIC,710,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00434_5c757f4e,f16->f32,f16,f32,1472,128,3456,651165696,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00220_34b73835,f8E5M2->f32,f8E5M2,f32,1536,256,1792,704643072,PANIC,415,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00261_195fc54a,f8E5M2->f32,f8E5M2,f32,2560,256,1152,754974720,PANIC,430,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00589_8dbbedf5,f16->f16,f16,f16,3840,192,1024,754974720,PANIC,441,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00166_d197c9c1,f8E5M2->f32,f8E5M2,f32,2176,128,2816,784334848,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00232_57ebb1ae,f8E5M2->f32,f8E5M2,f32,768,384,2688,792723456,PANIC,582,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00329_9e47e0d2,f16->f32,f16,f32,640,384,3328,817889280,PANIC,623,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00688_27d523b7,f16->f16,f16,f16,3392,3840,64,833617920,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00463_831ccd1f,f16->f32,f16,f32,2240,2944,128,844103680,PANIC,428,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00625_67c55f06,f16->f16,f16,f16,64,3520,3840,865075200,PANIC,755,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00488_aa837a9e,f16->f32,f16,f32,1472,192,3136,886308864,PANIC,786,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00116_7eb79575,f8E5M2->f32,f8E5M2,f32,3072,384,768,905969664,PANIC,431,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00113_d17b5f40,f8E5M2->f32,f8E5M2,f32,896,256,3968,910163968,PANIC,770,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00596_66a7a2fd,f16->f16,f16,f16,64,3776,4032,974389248,PANIC,879,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00651_04c1a573,f16->f16,f16,f16,2432,3200,128,996147200,PANIC,435,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00655_a84deaf7,f16->f16,f16,f16,2048,256,1984,1040187392,PANIC,415,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00132_b6f4b807,f8E5M2->f32,f8E5M2,f32,2048,512,1024,1073741824,PANIC,395,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00426_1b0a7aeb,f16->f32,f16,f32,3520,128,2432,1095761920,PANIC,951,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00758_ce80a020,f16->f16,f16,f16,3648,128,2368,1105723392,PANIC,864,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00362_4d35a779,f16->f32,f16,f32,3840,1536,192,1132462080,PANIC,476,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00223_78d8a8eb,f8E5M2->f32,f8E5M2,f32,2816,640,640,1153433600,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00634_e6540dd5,f16->f16,f16,f16,1024,320,3520,1153433600,PANIC,443,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00174_4a6f0a85,f8E5M2->f32,f8E5M2,f32,1152,256,3968,1170210816,PANIC,614,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00172_4115a34b,f8E5M2->f32,f8E5M2,f32,3584,512,640,1174405120,PANIC,444,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00390_4062a232,f16->f32,f16,f32,1024,640,1792,1174405120,PANIC,408,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00314_b02eaf41,f16->f32,f16,f32,1088,704,1600,1225523200,PANIC,429,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00028_ab3f6458,f8E5M2->f32,f8E5M2,f32,1536,384,2176,1283457024,PANIC,488,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00271_300904ef,f16->f32,f16,f32,1600,704,1152,1297612800,PANIC,387,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00139_a79deb3f,f8E5M2->f32,f8E5M2,f32,1280,256,3968,1300234240,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00326_65f256ac,f16->f32,f16,f32,128,3072,3328,1308622848,PANIC,609,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00348_29d5d222,f16->f32,f16,f32,3456,128,3008,1330642944,RUN-FAIL,1920,"gem5 rc=1, no stats.txt"
+me_matmul_00449_710d9818,f16->f32,f16,f32,3840,1408,256,1384120320,PANIC,467,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00335_e1e9faf6,f16->f32,f16,f32,576,640,3904,1439170560,PANIC,522,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00027_43882a41,f8E5M2->f32,f8E5M2,f32,3200,896,512,1468006400,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00743_c6a8526a,f16->f16,f16,f16,256,2688,2240,1541406720,PANIC,717,
+me_matmul_00489_ca669281,f16->f32,f16,f32,1408,448,2496,1574436864,PANIC,655,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00538_8bbaa46f,f16->f16,f16,f16,2560,1088,576,1604321280,PANIC,781,
+me_matmul_00645_2f3bee25,f16->f16,f16,f16,1600,512,1984,1625292800,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00245_d3d471b5,f8E5M2->f32,f8E5M2,f32,1664,384,2560,1635778560,PANIC,706,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00372_fad612d0,f16->f32,f16,f32,3136,4096,128,1644167168,PANIC,587,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00446_1003d6b5,f16->f32,f16,f32,2240,320,2304,1651507200,PANIC,634,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00772_2ddb4767,f16->f16,f16,f16,1280,2880,448,1651507200,RUN-FAIL,572,"gem5 rc=139, no stats.txt"
+me_matmul_00515_b4bc056e,f16->f32,f16,f32,704,1216,1984,1698430976,PANIC,426,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00012_31bcedba,f8E5M2->f32,f8E5M2,f32,1536,512,2176,1711276032,PANIC,522,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00399_946399fa,f16->f32,f16,f32,1984,256,3392,1722810368,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00145_a184b1ee,f8E5M2->f32,f8E5M2,f32,2688,1024,640,1761607680,PANIC,483,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00619_86fee95f,f16->f16,f16,f16,3904,192,2368,1774977024,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00740_6d890b5b,f16->f16,f16,f16,2432,320,2304,1793064960,PANIC,503,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00503_c12c2c35,f16->f32,f16,f32,2624,192,3584,1805647872,RUN-FAIL,1500,"gem5 rc=1, no stats.txt"
+me_matmul_00481_c0d6d74d,f16->f32,f16,f32,512,1152,3072,1811939328,PANIC,495,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00554_ccaee0d4,f16->f16,f16,f16,576,2624,1216,1837891584,RUN-FAIL,551,"gem5 rc=139, no stats.txt"
+me_matmul_00724_327b8be5,f16->f16,f16,f16,704,3712,704,1839726592,RUN-FAIL,437,"gem5 rc=139, no stats.txt"
+me_matmul_00494_efa832e3,f16->f32,f16,f32,320,1536,3968,1950351360,PANIC,574,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00332_23292a0a,f16->f32,f16,f32,1728,768,1472,1953497088,PANIC,569,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00338_3d103bba,f16->f32,f16,f32,1024,3008,640,1971322880,RUN-FAIL,625,"gem5 rc=139, no stats.txt"
+me_matmul_00030_359bfe4a,f8E5M2->f32,f8E5M2,f32,3456,896,640,1981808640,PANIC,521,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00320_5ec54f6c,f16->f32,f16,f32,256,2880,2688,1981808640,PANIC,558,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00541_eeb727c3,f16->f16,f16,f16,896,832,2688,2003828736,RUN-FAIL,1128,"gem5 rc=139, no stats.txt"
+me_matmul_00060_48258ca9,f8E5M2->f32,f8E5M2,f32,1152,1152,1536,2038431744,PANIC,405,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00648_202565e5,f16->f16,f16,f16,1344,3584,448,2157969408,RUN-FAIL,594,"gem5 rc=139, no stats.txt"
+me_matmul_00480_43b47d1f,f16->f32,f16,f32,2304,640,1472,2170552320,PANIC,683,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00454_17193f69,f16->f32,f16,f32,1216,3136,576,2196504576,PANIC,502,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00152_c0c66e1e,f8E5M2->f32,f8E5M2,f32,1792,640,1920,2202009600,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00666_2a056e26,f16->f16,f16,f16,256,2880,3008,2217738240,PANIC,548,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00071_2cfcbae3,f8E5M2->f32,f8E5M2,f32,2176,256,4096,2281701376,RUN-FAIL,1533,"gem5 rc=1, no stats.txt"
+me_matmul_00361_eb430b57,f16->f32,f16,f32,3264,256,2752,2299527168,PANIC,953,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00109_a2d97b05,f8E5M2->f32,f8E5M2,f32,2944,640,1280,2411724800,PANIC,742,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00461_a6615058,f16->f32,f16,f32,512,1600,2944,2411724800,PANIC,529,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00682_0344f129,f16->f16,f16,f16,3712,2560,256,2432696320,PANIC,560,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00450_5cf83525,f16->f32,f16,f32,2496,3968,256,2535456768,PANIC,558,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00548_d55aff45,f16->f16,f16,f16,3904,2560,256,2558525440,PANIC,514,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00128_61ef472a,f8E5M2->f32,f8E5M2,f32,896,1408,2048,2583691264,PANIC,522,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00196_309493bb,f8E5M2->f32,f8E5M2,f32,1792,384,3840,2642411520,PANIC,882,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00318_afdc0e66,f16->f32,f16,f32,256,3584,3008,2759852032,PANIC,701,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00327_a7a3457f,f16->f32,f16,f32,448,3264,1920,2807562240,PANIC,565,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00429_75b9e61a,f16->f32,f16,f32,3008,1216,768,2809135104,PANIC,561,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00250_e4aafc16,f8E5M2->f32,f8E5M2,f32,1792,512,3072,2818572288,PANIC,707,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00073_99abcdcf,f8E5M2->f32,f8E5M2,f32,3968,512,1408,2860515328,PANIC,683,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00644_0d666f63,f16->f16,f16,f16,1856,576,2688,2873622528,PANIC,668,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00005_067aae1d,f8E5M2->f32,f8E5M2,f32,256,2944,3840,2894069760,PANIC,594,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00217_7adfb67c,f8E5M2->f32,f8E5M2,f32,1408,1664,1280,2998927360,PANIC,662,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00674_623d905e,f16->f16,f16,f16,1536,1088,1856,3101687808,PANIC,572,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00147_bffd0ee9,f8E5M2->f32,f8E5M2,f32,1408,1152,1920,3114270720,PANIC,587,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00620_a4ed8583,f16->f16,f16,f16,1728,1408,1280,3114270720,PANIC,405,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00342_7936e8d3,f16->f32,f16,f32,3200,1088,896,3119513600,PANIC,635,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00616_cfbc7045,f16->f16,f16,f16,384,2496,3264,3128426496,PANIC,804,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00254_f9751996,f8E5M2->f32,f8E5M2,f32,2560,3200,384,3145728000,PANIC,527,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00038_e583cf0a,f8E5M2->f32,f8E5M2,f32,2944,768,1408,3183476736,PANIC,701,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00150_7a6983bc,f8E5M2->f32,f8E5M2,f32,2176,768,1920,3208642560,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00721_0f2ec1fc,f16->f16,f16,f16,2496,448,2880,3220439040,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00719_03ea2c14,f16->f16,f16,f16,1408,576,4032,3269984256,PANIC,639,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00225_33faffcd,f8E5M2->f32,f8E5M2,f32,2944,640,1920,3617587200,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00289_5caeb853,f16->f32,f16,f32,3648,384,2624,3675783168,RUN-FAIL,1695,"gem5 rc=1, no stats.txt"
+me_matmul_00070_c603a69d,f8E5M2->f32,f8E5M2,f32,640,2176,2688,3743416320,PANIC,643,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00587_48702597,f16->f16,f16,f16,3648,256,4096,3825205248,RUN-FAIL,1771,"gem5 rc=1, no stats.txt"
+me_matmul_00722_5ad16c10,f16->f16,f16,f16,1216,4096,768,3825205248,PANIC,504,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00280_5ae02cf6,f16->f32,f16,f32,1216,1920,1664,3884974080,PANIC,605,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00077_73bfa6e0,f8E5M2->f32,f8E5M2,f32,2688,384,3840,3963617280,RUN-FAIL,1607,"gem5 rc=1, no stats.txt"
+me_matmul_00322_e3c90fe9,f16->f32,f16,f32,1920,640,3328,4089446400,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00310_7557a74c,f16->f32,f16,f32,3712,1600,704,4181196800,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00444_f816e16a,f16->f32,f16,f32,2496,1344,1280,4293918720,PANIC,647,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00185_21a0ec22,f8E5M2->f32,f8E5M2,f32,640,3456,2048,4529848320,PANIC,629,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00173_e866753c,f8E5M2->f32,f8E5M2,f32,384,3328,3584,4580179968,PANIC,816,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00382_bd36d56f,f16->f32,f16,f32,512,3904,2304,4605345792,PANIC,714,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00121_85669119,f8E5M2->f32,f8E5M2,f32,1920,2432,1024,4781506560,PANIC,479,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00691_617f2a2c,f16->f16,f16,f16,3392,2048,704,4890558464,PANIC,854,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00324_7556462a,f16->f32,f16,f32,1664,768,3904,4989124608,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00249_9c14a053,f8E5M2->f32,f8E5M2,f32,2176,3840,640,5347737600,PANIC,559,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00752_726df992,f16->f16,f16,f16,3200,2944,576,5426380800,PANIC,794,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00097_bd1735a7,f8E5M2->f32,f8E5M2,f32,640,2304,3712,5473566720,PANIC,649,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00762_f472fe38,f16->f16,f16,f16,2368,1728,1344,5499518976,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00584_71d144a5,f16->f16,f16,f16,1216,4032,1152,5648154624,PANIC,561,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00468_71b865c0,f16->f32,f16,f32,640,2880,3072,5662310400,PANIC,805,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00086_01cd252e,f8E5M2->f32,f8E5M2,f32,1280,1536,2944,5788139520,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00422_db2f4272,f16->f32,f16,f32,704,2048,4032,5813305344,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00451_a4e147ea,f16->f32,f16,f32,3328,512,3520,5997854720,PANIC,1453,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00717_72287676,f16->f16,f16,f16,2560,1088,2176,6060769280,PANIC,652,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00154_fbef5069,f8E5M2->f32,f8E5M2,f32,640,2944,3328,6270484480,PANIC,817,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00531_8c044c3e,f16->f16,f16,f16,3072,3584,576,6341787648,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00133_e3eebd50,f8E5M2->f32,f8E5M2,f32,2432,2048,1280,6375342080,PANIC,952,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00007_8df7b9d5,f8E5M2->f32,f8E5M2,f32,1664,2944,1408,6897532928,PANIC,617,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00761_754e2914,f16->f16,f16,f16,2688,1152,2240,6936330240,PANIC,648,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00020_4dd3662a,f8E5M2->f32,f8E5M2,f32,2176,896,3584,6987710464,RUN-FAIL,1409,"gem5 rc=1, no stats.txt"
+me_matmul_00029_f67e5f5f,f8E5M2->f32,f8E5M2,f32,2432,2816,1024,7012876288,PANIC,736,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00499_0e36245e,f16->f32,f16,f32,512,3776,3712,7176454144,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00452_6f0c1ed8,f16->f32,f16,f32,4032,1856,1088,8141930496,PANIC,1037,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00349_46001dc4,f16->f32,f16,f32,3008,896,3200,8624537600,RUN-FAIL,1697,"gem5 rc=1, no stats.txt"
+me_matmul_00745_a51ed22c,f16->f16,f16,f16,1280,4032,1728,8918138880,PANIC,752,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00159_04257eb8,f8E5M2->f32,f8E5M2,f32,896,3072,3328,9160359936,TIMEOUT,14401,killed after 14400s guard (likely livelock)
+me_matmul_00397_6de99a99,f16->f32,f16,f32,2304,1728,2304,9172942848,PANIC,870,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00235_e3b25f9c,f8E5M2->f32,f8E5M2,f32,3200,3200,896,9175040000,PANIC,765,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00234_d1654277,f8E5M2->f32,f8E5M2,f32,768,3584,3456,9512681472,PANIC,887,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00100_018b4b1d,f8E5M2->f32,f8E5M2,f32,2816,3072,1152,9965666304,PANIC,854,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00239_2052de81,f8E5M2->f32,f8E5M2,f32,1920,1408,3712,10034872320,RUN-FAIL,1477,"gem5 rc=1, no stats.txt"
+me_matmul_00537_aae94981,f16->f16,f16,f16,1664,1792,3456,10305404928,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00464_a245148e,f16->f32,f16,f32,1984,2176,2496,10775691264,TIMEOUT,14403,killed after 14400s guard (likely livelock)
+me_matmul_00149_9bad879b,f8E5M2->f32,f8E5M2,f32,3072,2688,1408,11626610688,PANIC,916,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00009_b1f05256,f8E5M2->f32,f8E5M2,f32,1024,3072,3712,11676942336,PANIC,889,Runtime Error at MESI_Two_Level-L1cache.sm:326: Invalid Ru
+me_matmul_00129_7b72e836,f8E5M2->f32,f8E5M2,f32,1792,3968,1664,11832131584,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00572_ec8bbee6,f16->f16,f16,f16,3520,1536,2560,13841203200,PANIC,916,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00219_ede89b01,f8E5M2->f32,f8E5M2,f32,4096,2688,1408,15502147584,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00031_8585a1e7,f8E5M2->f32,f8E5M2,f32,1280,4096,3072,16106127360,TIMEOUT,14402,killed after 14400s guard (likely livelock)
+me_matmul_00334_4e2d8858,f16->f32,f16,f32,3968,1280,3264,16577986560,RUN-FAIL,2000,"gem5 rc=1, no stats.txt"
+me_matmul_00728_400cbfc0,f16->f16,f16,f16,2368,2560,3200,19398656000,PANIC,1066,panic condition !handled && !tc->getSystemPtr()->trapToGdb
+me_matmul_00176_e6776c88,f8E5M2->f32,f8E5M2,f32,2816,3456,2048,19931332608,RUN-FAIL,1488,"gem5 rc=1, no stats.txt"
+me_matmul_00026_97da1abb,f8E5M2->f32,f8E5M2,f32,3200,2432,2816,21915238400,RUN-FAIL,1679,"gem5 rc=1, no stats.txt"
+me_matmul_00119_e90a813c,f8E5M2->f32,f8E5M2,f32,3584,2944,2176,22959620096,RUN-FAIL,1839,"gem5 rc=1, no stats.txt"
+me_matmul_00084_9e8d1728,f8E5M2->f32,f8E5M2,f32,3456,3328,2944,33860616192,PANIC,1406,panic condition !handled && !tc->getSystemPtr()->trapToGdb

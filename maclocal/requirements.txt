@@ -1,0 +1,15 @@
+# Additive to the repo's ../requirements.txt -- install both.
+#
+#   pip install -r requirements.txt -r maclocal/requirements.txt
+
+scikit-learn>=1.4        # ridge / RF / HistGBM / SVR / kNN in models/me_classical.py
+matplotlib>=3.8          # figures in eval/report_me.py
+
+# The repo pins torch==2.4.1, which has no macOS x86_64 wheel (upstream dropped
+# Intel-Mac builds after 2.2.2). On such a host, install torch==2.2.2 instead.
+#
+# Either way torch 2.2.x is built against the NumPy 1.x C ABI and dies at import
+# with "Failed to initialize NumPy: _ARRAY_API not found" under NumPy 2.x, so
+# pin numpy below 2 when running that build:
+#
+#   pip install "numpy<2" torch==2.2.2
